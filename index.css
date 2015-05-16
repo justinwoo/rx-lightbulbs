@@ -1,0 +1,46 @@
+body {
+  font-family: Helvetica;
+}
+
+.line {
+  position: relative;
+  height: 40px;
+  margin: 40px;
+}
+
+.line .marker {
+  position: absolute;
+  width: 100%;
+  border: 1px solid grey;
+  top: 50%;
+}
+
+.line .fill {
+  position: absolute;
+  border: 1px solid yellow;
+  top: 50%;
+  left: 0;
+}
+
+.lightbulb {
+  position: absolute;
+  text-align: center;
+  background: white;
+  border: 1px solid grey;
+  border-radius: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.lightbulb p {
+  margin: 14px auto;
+  font-size: 14px;
+}
+
+.lightbulb.active {
+  background: yellow;
+}
+
+.operation-name {
+  text-align: center;
+}
