@@ -1,4 +1,4 @@
-var React = require('react');
+import React from 'react';
 
 class Line extends React.Component {
 
@@ -14,4 +14,4 @@ class Line extends React.Component {
 
 }
 
-module.exports = Line;
+export default Line;

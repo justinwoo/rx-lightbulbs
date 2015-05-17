@@ -1,7 +1,7 @@
-var React = require('react');
+import React from 'react';
 
-var Line = require('./line');
-var Lightbulb = require('./lightbulb');
+import Line from './line';
+import Lightbulb from './Lightbulb';
 
 class Root extends React.Component {
 
@@ -19,7 +19,7 @@ class Root extends React.Component {
   getLine(counter, values, key) {
     var lightbulbs = values.map(function (value, i) {
       return (
-        <Lightbulb key={i} value={value} counter={counter} label={value}/>
+        <Lightbulb key={i} value={value} isActive={counter > value} label={value}/>
       );
     });
 
@@ -42,4 +42,4 @@ class Root extends React.Component {
   }
 }
 
-module.exports = Root;
+export default Root;

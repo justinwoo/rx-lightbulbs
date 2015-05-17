@@ -1,9 +1,9 @@
-var React = require('react');
+import React from 'react';
 
 class Lightbulb extends React.Component {
 
   render() {
-    var className = this.props.counter > this.props.value ? 'lightbulb active' : 'lightbulb';
+    var className = this.props.isActive ? 'lightbulb active' : 'lightbulb';
     return (
       <div className={className} ref="container" style={{left: this.props.value + '%'}}>
         <p>{this.props.label}</p>
@@ -13,4 +13,4 @@ class Lightbulb extends React.Component {
 
 }
 
-module.exports = Lightbulb;
+export default Lightbulb;
